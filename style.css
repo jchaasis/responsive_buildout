@@ -80,19 +80,19 @@ header{
 
 #main_content {
   background-color:#ddffff;
-  padding: 3%;
+  padding: 10px;
 }
 
 #sidebar_content {
   display:flex;
-  background-color: #ffffdd;
   padding: 0;
   flex-direction:column;
 }
 
 #sidebar_content div {
-  border-top: 3vw solid white;
-  padding: 3%;
+        background-color: #ffffdd;
+        margin-bottom: 2%;
+        padding: 10px;
 }
 
 #site_footer {
@@ -129,16 +129,11 @@ section {
   }
 
     #sidebar_content {
-      display:flex;
       background-color: #ffffdd;
-      padding: 3%;
+      display:flex;
+      padding: 1%;
       flex-direction:row;
       justify-content: space-between;
-  }
-
-  #sidebar_content div {
-    border-top: none;
-    padding: 2%;
   }
 }
 
@@ -153,9 +148,20 @@ section {
     padding: 1%;
     margin-left: 20%;
   }
-
   #main_content {
     display:flex;
-    flex-direction: row;
   }
+  
+  #main_content div:nth-of-type(1){
+    flex:2;
+  }
+
+  #main_content div:nth-of-type(2){
+    flex:1;
+  }
+
+  #sidebar_content div{
+    flex: 1;
+  }
+
 }
